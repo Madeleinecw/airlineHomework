@@ -35,4 +35,8 @@ public class Flight {
         double allowance = plane.getBaggageCapacity() / plane.getCapacity();
         return allowance;
     }
+
+    public double getBaggageCapacity(){
+        return plane.getBaggageCapacity();
+    }
 }
