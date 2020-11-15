@@ -32,7 +32,7 @@ public class Flight {
     }
 
     public double getPassengerBaggageAllowance(){
-        double allowance = plane.getBaggageCapacity() / passengers.size();
+        double allowance = plane.getBaggageCapacity() / plane.getCapacity();
         return allowance;
     }
 }

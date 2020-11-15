@@ -32,4 +32,11 @@ public class FlightTest {
         flight.book(passenger);
         assertEquals(59, flight.availableSeats());
     }
+
+    @Test
+    public void checkBaggageAllowance(){
+        assertEquals(16.66, flight.getPassengerBaggageAllowance(), 0.01);
+    }
+
+
 }
